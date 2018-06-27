@@ -1,50 +1,50 @@
 introduction:
-  title: Introduction
-  whatsNew: What's New?
+  title: 介绍
+  whatsNew: 新特性
 quickStart:
-  title: Quick Start
+  title: 快速起步
   buildCLI:
-    title: Build/Install the CLI
-    installSdkman: Install with Sdkman
-    installWindows: Install through Binary on Windows
-    buildSource: Building from Source
-  creatingServer: Creating a Server Application
-  ideSetup: Setting up an IDE
-  creatingClient: Creating a Client
-  deployingApp: Deploying the Application
+    title: 构建或者安装命令行工具（CLI）
+    installSdkman: 通过Sdkman安装
+    installWindows: 在Windows上通过安装二进制包
+    buildSource: 通过源码构建的方式安装
+  creatingServer: 创建一个服务端应用
+  ideSetup: 设置集成开发环境（IDE）
+  creatingClient: 创建一个客户端应用
+  deployingApp: 部署应用程序
 ioc:
-  title: Inversion of Control
-  beans: Defining Beans
-  how: How Does it Work?
-  beanContext: The BeanContext 
-  types: Injectable Container Types
-  qualifiers: Bean Qualifiers
+  title: 控制反转（IoC）
+  beans: 定义Bean
+  how: 这是怎么工作的？
+  beanContext: BeanContext 
+  types: 可注入容器类型
+  qualifiers: Bean的标识符
   scopes:
-    title: Scopes
-    builtInScopes: Built-In Scopes
-    refreshable: Refreshable Scope
-    metaScopes: Scopes on Meta Annotations
-  factories: Bean Factories
-  conditionalBeans: Conditional Beans
-  replaces: Bean Replacement
-  configurations: Bean Configurations
-  lifecycle: Life-Cycle Methods
-  events: Bean Events
+    title: 范围
+    builtInScopes: 内置范围
+    refreshable: 可刷新范围
+    metaScopes: 注解上的范围
+  factories: Bean工厂
+  conditionalBeans: 条件化的Bean
+  replaces: Bean替换
+  configurations: Bean配置
+  lifecycle: 生命周期方法
+  events: Bean的事件
   annotationMetadata: Bean Annotation Metadata
-  springBeans: Micronaut Beans And Spring
-  android: Android Support
+  springBeans: Micronaut的Bean与Spring的关系
+  android: Android支持
 config:
-  title: Application Configuration
-  environments: The Environment
+  title: 应用配置
+  environments: 环境
   propertySource: PropertySources
-  valueAnnotation: Configuration Injection
-  configurationProperties: Configuration Properties
-  customTypeConverter: Custom Type Converters
-  eachProperty: Using @EachProperty to Drive Configuration
-  eachBean: Using @EachBean to Drive Configuration
-  # validation: Validating Configuration
+  valueAnnotation: 配置注入
+  configurationProperties: 配置属性
+  customTypeConverter: 自定义类型转换器
+  eachProperty: 使用 @EachProperty 来配置
+  eachBean: 使用 @EachBean 来配置
+  # validation: 校验配置
 aop:
-  title: Aspect Oriented Programming
+  title: 面向切面的编程（AOP）
   aroundAdvice: Around Advice
   introductionAdvice: Introduction Advice
   validation:
@@ -58,37 +58,37 @@ aop:
   springAop:
     title: Bridging Spring AOP
 httpServer:
-  title: The HTTP Server
-  runningServer: Running the Embedded Server
-  runningSpecificPort: Running Server on a Specific Port
-  routing: HTTP Routing
-  binding: Simple Request Binding
-  requestResponse: The HttpRequest and HttpResponse
-  producesAnnotation: Response Content-Type
-  consumesAnnotation: Accepted Request Content-Type
+  title: HTTP服务器
+  runningServer: 运行内嵌的服务器
+  runningSpecificPort: 在指定端口运行服务器
+  routing: HTTP路由
+  binding: 简单请求绑定
+  requestResponse: HttpRequest和HttpResponse
+  producesAnnotation: 响应的Content-Type
+  consumesAnnotation: 可接受请求的Content-Type
   reactiveServer:
-    title: Reactive HTTP Request Processing
-    bodyAnnotation: Using the @Body Annotation
+    title: 响应式HTTP请求处理
+    bodyAnnotation: 使用@Body注解
     reactiveResponses: Reactive Responses
   jsonBinding: JSON Binding with Jackson
   staticResources: Serving Static Resources
 #  contentNegotiation: Content Negotiation
-  errorHandling: Error Handling
-  formData: Handling Form Data
-  serverIO: Writing Response Data
-  uploads: File Uploads
-  transfers: File Transfers
-  sse: Server Sent Events
-  filters: HTTP Filters
-  sessions: HTTP Sessions
-  serverEvents: Server Events
+  errorHandling: 错误处理
+  formData: 处理表单数据
+  serverIO: 返回响应数据
+  uploads: 文件上传
+  transfers: 文件转换
+  sse: 服务端发送事件（SSE）
+  filters: HTTP过滤器
+  sessions: HTTP会话
+  serverEvents: 服务器事件
   serverConfiguration:
-    title: Configuring the HTTP Server
-    threadPools: Configuring Server Thread Pools
-    cors: Configuring CORS
-    https: Securing the Server with HTTPS  
+    title: 配置HTTP服务器
+    threadPools: 配置服务器线程池
+    cors: 配置CORS
+    https: 配置服务器安全协议HTTPS
 httpClient:
-  title: The HTTP Client
+  title: HTTP客户端
   lowLevelHttpClient:
     title: Using the Low-Level HTTP Client
     clientBasics: Sending your first HTTP request
@@ -105,58 +105,58 @@ httpClient:
     clientRetry: Retry and Circuit Breaker
     clientFallback: Client Fallbacks
     netflixHystrix: Netflix Hystrix Support
-  clientFilter: HTTP Client Filters
+  clientFilter: HTTP客户端过滤器
 cloud:
-  title: Cloud Native Features
+  title: 云原生特性
   cloudConfiguration:
-    title: Cloud Configuration
-    distributedConfiguration: Distributed Configuration
-    distributedConfigurationConsul: Consul Support
+    title: 云配置
+    distributedConfiguration: 分布式配置
+    distributedConfigurationConsul: 对Consul的支持
 #    distributedConfigurationAwsParameterStore: AWS Parameter Store Support
   serviceDiscovery:
-    title: Service Discovery
-    serviceDiscoveryConsul: Consul Support
-    serviceDiscoveryEureka: Eureka Support
-    serviceDiscoveryKubernetes: Kubernetes Support
+    title: 服务发现
+    serviceDiscoveryConsul: Consul的支持
+    serviceDiscoveryEureka: Eureka的支持
+    serviceDiscoveryKubernetes: Kubernetes的支持
 #    serviceDiscoveryRoute53: AWS Route 53 Support
   clientSideLoadBalancing:
-    title: Client Side Load Balancing
-    netflixRibbon: Netflix Ribbon Support
+    title: 客户端负载均衡
+    netflixRibbon: Netflix Ribbon的支持
   distributedTracing:
-    title: Distributed Tracing
+    title: 分布式跟踪
     zipkin: Tracing with Zipkin
     jaeger: Tracing with Jaeger
 serverlessFunctions:
-  title: Serverless Functions
+  title: 无服务器函数
   writingFunctions:
-    title: Writing Functions
+    title: 编写函数
     functionApplication: FunctionApplication
     functionBean: FunctionBean
-    groovyFunctions: Groovy Functions
+    groovyFunctions: Groovy函数
   runningFunctions:
-    title: Running Functions
+    title: 运行函数
     functionWeb: Functions as Web Applications
     functionCLI: Functions as CLI Applications
   lambdaFunctions: Deploying Functions to AWS Lambda 
   callingFunctions: Calling Functions with FunctionClient
 dataAccess:
-  title: Configurations for Data Access
-  sqlSupport: Configuring a SQL Data Source
-  hibernateSupport: Configuring Hibernate
-  mongoSupport: Configuring MongoDB
-  neo4jSupport: Configuring Neo4j
-  redisSupport: Configuring Redis
-  cassandraSupport: Configuring Cassandra
+  title: 数据访问配置
+  sqlSupport: 配置一个SQL数据源
+  hibernateSupport: 配置Hibernate
+  mongoSupport: 配置MongoDB
+  neo4jSupport: 配置Neo4j
+  redisSupport: 配置Redis
+  cassandraSupport: 配置Cassandra
 otherConfigurations:
-  title: Other Configurations
+  title: 其他配置
   rabbitmq: RabbitMQ
 languageSupport:
-  title: Language Support
-  java: Micronaut for Java
-  groovy: Micronaut for Groovy
-  kotlin: Micronaut for Kotlin
+  title: 语言支持
+  java: 对Java语言的支持
+  groovy: 对Groovy语言的支持
+  kotlin: 对Kotlin语言的支持
 management:
-  title: Management & Monitoring
+  title: 管理和监控
   buildingEndpoints:
     title: Creating Endpoints
     endpointAnnotation: The Endpoint Annotation
@@ -172,18 +172,18 @@ management:
     routesEndpoint: The Routes Endpoint
     stopEndpoint: The Server Stop Endpoint
 security:
-  title: Security
+  title: 安全
   authenticationProviders: Authentication Providers
   securityRule:
-      title: Security Rules
+      title: 安全规则
       ipPattern: IP Pattern Rule
       secured: Secured Annotation
       interceptUrlMap: Intercept URL Map
       builtInEndpointsAccess: Built-In Endpoints Security
   authenticationStrategies:
     title: Authentication Strategies
-    basicAuth: Basic Auth
-    session: Session Authentication
+    basicAuth: 基本认证
+    session: 会话认证
     jwt:
       title: JSON Web Token
       reader:
@@ -199,17 +199,17 @@ security:
       render:
         title: Token Render
   endpoints:
-    title: Built-In Security Controllers
-    login: Login Controller
-    logout: Logout Controller
-    refresh: Refresh Controller
-  securityEvents: Security Events
+    title: 内置安全控制器
+    login: 登录控制器
+    logout: 退出控制器
+    refresh: 刷新控制器
+  securityEvents: 安全事件
 cli:
-  title: Micronaut CLI
-  createProject: Creating a Project
-  profiles: Profiles
-  features: Features
-  commands: Commands
-faq: Frequently Asked Questions (FAQ)
-problems: Common Problems
-breaks: Breaking Changes
+  title: Micronaut命令行工具（CLI）
+  createProject: 创建项目
+  profiles: 配置
+  features: 特性
+  commands: 命令
+faq: 常见问题及答案（FAQ）
+problems: 共性问题
+breaks: 不兼容变更
