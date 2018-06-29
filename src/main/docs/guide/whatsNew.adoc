@@ -1,12 +1,12 @@
-This section covers what's new since the previous release of Micronaut.
+Apart from https://github.com/micronaut-projects/micronaut-core/milestone/2?closed=1[issues resolved and minor enhancements] since the last release of Micronaut, this section covers significant new features.
 
 === Metrics Support
 
 The first version of support for Metrics via http://micrometer.io[Micrometer] is now available. Metrics are exposed via the <<metricsEndpoint,Metrics Endpoint>> and can be extensively customized.
 
-The first version of Metrics support includes support for Statsd, Atlas, Graphite and Prometheus with more Metrics backends coming in the future.
+Metrics support includes support for Statsd, Atlas, Graphite and Prometheus with more Metrics backends coming in the future.
 
-See the section on the <<metricsEndpoint,Metrics Endpoint>> for more information.
+See the section on the <<metricsEndpoint,Metrics Endpoint>> for more information. Special thanks to https://github.com/ctoestreich[Christian Oestreich] for significant contributions in this area.
 
 === Server Sent Event (SSE) Client
 
@@ -16,7 +16,7 @@ In additional the `@Client` annotation has been updated to add support for autom
 
 See the section on <<clientAnnotationStreaming, Client Streaming>> for more information.
 
-=== Blocking I/O Support
+=== Improved Blocking I/O Support
 
 It is now possible to return a api:core.io.Writable[] and have the operation offloaded to a the I/O thread pool, thus improving the ability to interface with APIs that do not yet support non-blocking I/O:
 
@@ -55,7 +55,7 @@ Beans can now be injected optionally using Kotlin nullable types without the nee
 
 === CLI Improvements
 
-Two new flags have been added to the `create-app` command: `lang` and `test`. 
+A new flag has been added to the `create-app` command: `lang`. 
 
 The `lang` flag accepts any of the three supported languages: `java`, `groovy`, or `kotlin` (`java` is default when no flag is supplied). This selection will determine the language used for the `Application` class as well as other code artifacts generated using CLI commands (such as `create-controller`, `create-job`, etc).
 
@@ -69,20 +69,6 @@ $ mn create-app bar --lang groovy
 [source,bash]
 ----
 $ mn create-app baz --lang kotlin
-----
-
-The `test` flag accepts `spock`, `junit`, or `spek`. This setting will determine the test framework used by any tests generated using CLI commands (currently only `create-controller`).  Each `lang` selection includes a default test framework selection: `java`/`junit`, `groovy`/`spock`, `kotlin`/`spek`. The `test` flag allows you to override the default test framework selection.
-
-.Creating a Java application with Spock
-[source,bash]
-----
-$ mn create-app bar --test spock
-----
-
-.Creating a Groovy application with JUnit
-[source,bash]
-----
-$ mn create-app baz --lang groovy --test junit
 ----
 
 ==== Default Dockerfile  
